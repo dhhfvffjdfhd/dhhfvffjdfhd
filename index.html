@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini YouTube</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">▶ MiniTube</div>
+      <input id="search" type="search" placeholder="Rechercher" />
+    </header>
+
+    <main>
+      <aside class="sidebar">
+        <button class="active">Accueil</button>
+        <button>Tendances</button>
+        <button>Abonnements</button>
+      </aside>
+
+      <section>
+        <h1>Vidéos recommandées</h1>
+        <div id="videoGrid" class="video-grid"></div>
+      </section>
+    </main>
+
+    <template id="cardTemplate">
+      <article class="card">
+        <div class="thumb"></div>
+        <div class="meta">
+          <h2></h2>
+          <p class="channel"></p>
+          <p class="stats"></p>
+        </div>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
